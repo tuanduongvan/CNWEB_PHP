@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Thong tin chi tiet sinh vien</title>
+</head>
+<body>
+    <?php
+        echo '<table border="1" width="100%">';
+        echo '<caption><h2>Chi Tiết Sinh Viên</h2></caption>';
+        echo '<tr><th>IDNV</th><th>Họ tên</th><th>Tuổi</th><th>Trường học</th></tr>';
+        echo '<tr><td>' . $student->id . '</td><td>' . $student->name . '</td><td>' . $student->age . '</td><td>' . $student->university . '</td></tr>';
+        echo '</table>';
+    ?>
+        
+
+    <!-- <h2>Chi tiet sinh vien:</h2>
+    <?php
+    echo "<p><b>" .$student->name ."</b></p>";
+    echo "<p> Age: " .$student->age ."</p>";
+    echo "<p> University: " .$student->university ."</p><br>";
+    ?> -->
+    <p><a href="javascript:history.back()">Back</a></p>
+</body>
+</html>
